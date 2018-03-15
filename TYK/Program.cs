@@ -15,6 +15,8 @@ namespace TYK
 
             FileManager fm = new FileManager();
             fm.ResultsWrite();
+            bum.AnswersWrittenSucc();
+            bum.DecoratorDemo();
 
             UIStyle User1 = new PhysicsUI();
             User1 = new NAUStyle(User1);    // PHYS NAU   exp 1896+200 = 2096

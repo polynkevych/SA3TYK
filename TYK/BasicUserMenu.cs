@@ -10,7 +10,19 @@ namespace TYK
     {
         public void WelomeText()
         {
-            Console.Write("Hello and welcome to Test Your Knowledge v1.0");
+            Console.Write("Hello and welcome to Test Your Knowledge v1.0\n" +
+                "Enter your answer below\n" +
+                "After press enter \n");
+        }
+
+        public void AnswersWrittenSucc()
+        {
+            Console.WriteLine("Answers had been written succesfully!\n");
+        }
+        public void DecoratorDemo()
+        {
+            Console.Write("Decorator implementation\n" +
+                "****************************\n");
         }
     }
 }
