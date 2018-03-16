@@ -8,6 +8,14 @@ namespace TYK
 {
     class BasicUserMenu
     {
+        internal FileManager FileManager
+        {
+            get => default(FileManager);
+            set
+            {
+            }
+        }
+
         public void WelomeText()
         {
             Console.Write("Hello and welcome to Test Your Knowledge v1.0\n" +

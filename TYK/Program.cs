@@ -8,6 +8,22 @@ namespace TYK
 {
     class Program
     {
+        internal BasicUserMenu BasicUserMenu
+        {
+            get => default(BasicUserMenu);
+            set
+            {
+            }
+        }
+
+        internal UIStyleDecorator UIStyleDecorator
+        {
+            get => default(UIStyleDecorator);
+            set
+            {
+            }
+        }
+
         static void Main(string[] args)
         {
             BasicUserMenu bum = new BasicUserMenu();

@@ -10,9 +10,13 @@
   <Class Name="TYK.Program" Collapsed="true">
     <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACE=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BasicUserMenu" />
+      <Property Name="UIStyleDecorator" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="TYK.UIStyle" Collapsed="true">
     <Position X="3.75" Y="0.5" Width="1.5" />
@@ -59,9 +63,12 @@
   <Class Name="TYK.BasicUserMenu" Collapsed="true">
     <Position X="9.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAACAAAACAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BasicUserMenu.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FileManager" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
