@@ -18,8 +18,8 @@ namespace TYK
 
         public void WelomeText()
         {
-            Console.Write("Hello and welcome to Test Your Knowledge v1.0\n" +
-                "Enter your answer below\n" +
+            Console.Write("Hello and welcome to Test Your Knowledge v1.02\n" +
+                "Enter your answers below\n" +
                 "After press enter \n");
         }
 

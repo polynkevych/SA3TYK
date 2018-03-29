@@ -35,12 +35,12 @@ namespace TYK
             bum.DecoratorDemo();
 
             UIStyle User1 = new PhysicsUI();
-            User1 = new NAUStyle(User1);    // PHYS NAU   exp 1896+200 = 2096
+            User1 = new NAUStyle(User1);    // PHYS NAU   exp 1896 + 200 = 2096
             Console.WriteLine("Test Information: {0}", User1.Name);
             Console.WriteLine("Code: {0}", User1.GetColor());
 
             UIStyle User2 = new PhysicsUI();
-            User2 = new KPIStyle(User2);    // PHYS KPI exp 1896+350 = 2246
+            User2 = new KPIStyle(User2);    // PHYS KPI exp 1896 + 350 = 2246
             Console.WriteLine("Test Information: {0}", User2.Name);
             Console.WriteLine("Code: {0}", User2.GetColor());
 
@@ -60,7 +60,7 @@ namespace TYK
         {
             this.Name = n;
         }
-        public string Name { get; protected set; }
+        public string Name { get; set; }
         public abstract int GetColor();
     }
 
