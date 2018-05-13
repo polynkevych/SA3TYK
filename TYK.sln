@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TYK", "TYK\TYK.csproj", "{E8EA5774-F368-42DD-9A03-17B7FC025016}"
+	ProjectSection(ProjectDependencies) = postProject
+		{762E529A-EE02-4956-9EA4-E918B8ECDC7F} = {762E529A-EE02-4956-9EA4-E918B8ECDC7F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeDLL", "PrototypeDLL\PrototypeDLL.csproj", "{8F37BB2A-0D90-48C4-A8D5-69696FBE77BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{762E529A-EE02-4956-9EA4-E918B8ECDC7F} = {762E529A-EE02-4956-9EA4-E918B8ECDC7F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP Web App", "ASP Web App\ASP Web App.csproj", "{762E529A-EE02-4956-9EA4-E918B8ECDC7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,10 @@ Global
 		{8F37BB2A-0D90-48C4-A8D5-69696FBE77BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F37BB2A-0D90-48C4-A8D5-69696FBE77BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F37BB2A-0D90-48C4-A8D5-69696FBE77BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762E529A-EE02-4956-9EA4-E918B8ECDC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762E529A-EE02-4956-9EA4-E918B8ECDC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762E529A-EE02-4956-9EA4-E918B8ECDC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762E529A-EE02-4956-9EA4-E918B8ECDC7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,31 +6,14 @@ using System.Threading.Tasks;
 
 namespace PrototypeDLL
 {
-   // class Program
-    //{
-    //    static void Main(string[] args)
-    //    {
-    //        IFigure figure = new Rectangle(30, 40);
-    //        IFigure clonedFigure = figure.Clone();
-    //        figure.GetInfo();
-    //        clonedFigure.GetInfo();
 
-    //        figure = new Circle(30);
-    //        clonedFigure = figure.Clone();
-    //        figure.GetInfo();
-    //        clonedFigure.GetInfo();
-
-    //        Console.Read();
-   //     }
-   // }
-
-    interface IUser
+   public interface IUser
     {
         IUser Clone();
         void GetInfo();
     }
 
-    class Teacher : IUser //rectangle
+    public class Teacher : IUser 
     {
         int testAcess;
         int answerAcess;
@@ -40,17 +23,18 @@ namespace PrototypeDLL
             answerAcess = aA;
         }
 
-        public IUser Clone()    
-        {
+        
+       public IUser Clone()    
+       {
             return new Teacher(this.testAcess, this.answerAcess);
-        }
-        public void GetInfo()
-        {
-            Console.WriteLine("Прямоугольник длиной {0} и шириной {1}", testAcess, answerAcess);
+       }
+       public void GetInfo()
+        { 
+            Console.WriteLine("Teacher with access to read test {0} and write results {1}", testAcess, answerAcess);
         }
     }
 
-    class Student : IUser  //circle
+    public class Student : IUser 
     {
         int testPass;
         public Student(int tP)
@@ -64,7 +48,7 @@ namespace PrototypeDLL
         }
         public void GetInfo()
         {
-            Console.WriteLine("Круг радиусом {0}", testPass);
+            Console.WriteLine("Student logged with number {0}", testPass);
         }
     }
 }

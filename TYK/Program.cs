@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PrototypeDLL;
+using TYK.ServiceReference1;
 
 namespace TYK
 {
     class Program
     {
+        public delegate void myDelegate();
+        public event myDelegate getInfo;
+        public event myDelegate getInfoS;
+        
+       
+
         internal BasicUserMenu BasicUserMenu
         {
             get => default(BasicUserMenu);
@@ -26,8 +34,34 @@ namespace TYK
 
         static void Main(string[] args)
         {
+            Program program = new Program();
+            Teacher teacher = new Teacher(1, 1);
+            Student student = new Student(2);
+            WebServiceSoapClient n = new WebServiceSoapClient();
+            
+
+            string res;
+            res = Console.ReadLine();
+            program.getInfo += teacher.GetInfo;
+            program.getInfoS += student.GetInfo;
+            if (res == "1")
+            {
+                program.getInfo();
+            }
+            else if (res == "2")
+            {
+                program.getInfoS();
+            }
+            else
+                Console.WriteLine("error");
+
+        
+            
+            //teacher.getInfo += ();
             BasicUserMenu bum = new BasicUserMenu();
             bum.WelomeText();
+            n.HelloWorld();
+            Console.WriteLine(n.HelloWorld());
 
             FileManager fm = new FileManager();
             fm.ResultsWrite();
